@@ -1,20 +1,3 @@
-''''
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer as SIA
-
-sia = SIA()
-results = []
-
-headline_result = ("Sensex falls by 3,000")
-
-pol_score = sia.polarity_scores(headline_result)
-pol_score ['headline_result'] = headline_result
-
-results.append(pol_score)
-
-print(results[0:3])
-'''
-
-
 import pandas as pd
 from sklearn import metrics
 from sklearn.model_selection import train_test_split
